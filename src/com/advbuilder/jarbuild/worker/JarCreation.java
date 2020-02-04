@@ -9,13 +9,6 @@ public class JarCreation {
 	public int main(String buildPath, String jarLocation, String manifestFileLocation, String classFilesLocation, String outputFileName) {
 		// TODO Auto-generated method stub
 		try {
-			/*
-			 * buildPath="/home/pronoyde/Documents/SampleJavaJson/bin/";
-			 * jarLocation="/usr/jdk/jdk1.8.0_212/bin/jar"; manifestFileLocation=
-			 * "/home/pronoyde/Documents/SampleJavaJson/bin/Manifest.MF";
-			 * classFilesLocation="/home/pronoyde/Documents/SampleJavaJson/bin/";
-			 * outputFileName="testOutput.jar";
-			 */
 			String cmd=jarLocation+" cvfm "+outputFileName+" "+manifestFileLocation+" -C "+classFilesLocation+" .";
 			System.out.println(cmd);
 			File workingDirectory = new File(buildPath);
